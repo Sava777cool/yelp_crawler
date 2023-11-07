@@ -16,7 +16,7 @@ class WrongCategoryException(Exception):
 class BaseScraper:
     def __init__(self, url: str, category: str, location: str, business_limit: int):
         self._url = url
-        self._category = category
+        self._category = category.title()
         self._location = location
         self._business_limit = business_limit
         self.logger = logger.bind(class_name=self.__class__.__name__)
