@@ -14,7 +14,7 @@ parser.add_argument(
 parser.add_argument(
     "--amount_of_businesses",
     type=int,
-    default=10,
+    default=100,
     help="Amount of businesses by category (default: 100)",
 )
 
